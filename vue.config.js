@@ -1,3 +1,3 @@
 module.exports = {
-  outputDir: 'lib',
+  outputDir: 'lib/dist',
 }

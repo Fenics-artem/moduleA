@@ -1,16 +1,16 @@
 {
   "name": "module-a",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "main": "./lib",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "files": ["lib"],
   "dependencies": {
     "core-js": "^3.6.5"
   },
-  "type": "module",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
@@ -22,7 +22,6 @@
     "vue-template-compiler": "^2.6.11",
     "vuex": "^3.1.0"
   },
-  "files": ["lib"],
   "eslintConfig": {
     "root": true,
     "env": {
