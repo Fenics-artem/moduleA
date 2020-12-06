@@ -1,6 +1,7 @@
 {
   "name": "module-a",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "main": "./lib",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -20,7 +21,7 @@
     "vue-template-compiler": "^2.6.11",
     "vuex": "^3.1.0"
   },
-  "files": ["lib"],
+  "files": ["lib/*"],
   "eslintConfig": {
     "root": true,
     "env": {
