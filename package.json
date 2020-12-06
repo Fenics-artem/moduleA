@@ -1,13 +1,15 @@
 {
   "name": "module-a",
-  "version": "0.7.0",
-  "main": "./lib",
+  "version": "0.9.0",
+  "main": "./dist/js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "clear": "del-cli dist",
+    "prepublishOnly": "yarn run clear && yarn run build"
   },
-  "files": ["lib"],
+  "files": ["lib", "./lib", "*/lib", "!*"],
   "dependencies": {
     "core-js": "^3.6.5"
   },
