@@ -1,6 +1,6 @@
 {
   "name": "module-a",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "main": "./lib",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5"
   },
+  "type": "module",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
