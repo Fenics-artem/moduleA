@@ -8,22 +8,19 @@ import vue from 'rollup-plugin-vue';
 import { terser } from 'rollup-plugin-terser';
 
 export default {
-  input: 'src/index.js',
+  input: 'lib/index.js',
   output: {
     file: 'dist/index.js',
     format: 'umd',
-    name: '@mygenius/vouchers',
+    name: 'moduleA',
     sourcemap: true,
     exports: 'named',
     globals: {
-      '@mygenius/api': '@mygenius/api',
-      '@mygenius/request': '@mygenius/request',
       vue: 'vue',
-      vuex: 'vuex',
-      lodash: 'lodash'
+      vuex: 'vuex'
     }
   },
-  external: ['@mygenius/api', 'vue', 'vuex', 'lodash'],
+  external: ['vue', 'vuex'],
   plugins: [
     resolve({
       preferBuiltins: false,
@@ -40,7 +37,7 @@ export default {
       extract: true
     }),
     vue({
-      css: false,
+      css: true,
       template: { optimizeSSR: false }
     }),
     terser()
