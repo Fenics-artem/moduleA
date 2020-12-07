@@ -1,12 +1,13 @@
 {
   "name": "module-a",
-  "version": "0.12.0",
+  "version": "0.13.0",
+  "main": "./dist/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rollup -c",
     "lint": "vue-cli-service lint"
   },
-  "files": ["lib", "./lib", "*/lib", "!*"],
+  "files": ["lib"],
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
